@@ -21,7 +21,7 @@ public:
 
     bool decide(int x, int y, int days, float rent) {
         float medianRent = calculateRent(last30DaysRents);
-        float expectedRent = rent * x * y;
+        float expectedRent = rent;
 
         if (expectedRent < medianRent) {
             return false;
